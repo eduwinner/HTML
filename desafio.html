@@ -8,148 +8,59 @@
     <meta name="author" content="Eduardo Dias Pereira"> <!-- Nome do autor do documento -->
     <link rel="icon" href="https://www.example.com/favicon.ico" type="image/x-icon"> <!-- Link para o ícone do site -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Link para o Font Awesome -->                
-    <title>Aprendendo HTML</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f7fa;
-            color: #333;
-            margin: 20px 40px;
-            line-height: 1.6;
-        }
-        h1 {
-            color: #2c3e50;
-            text-align: center;
-            margin-bottom: 5px;
-        }
-        hr {
-            border: none;
-            border-bottom: 2px solid #3498db;
-            margin-bottom: 20px;
-            width: 50%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        h2 {
-            color: #2980b9;
-            margin-bottom: 10px;
-        }
-        h3 {
-            color: #34495e;
-            margin-top: 30px;
-        }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        code {
-            background-color: #ecf0f1;
-            padding: 2px 5px;
-            border-radius: 3px;
-            font-family: monospace;
-        }
-        p {
-            margin-bottom: 15px;
-        }
-
-        /* Responsividade */
-        @media (max-width: 768px) {
-            body {
-                margin: 15px 20px;
-            }
-            hr {
-                width: 80%;
-            }
-            ul {
-                padding-left: 15px;
-            }
-        }
-        @media (max-width: 480px) {
-            body {
-                margin: 10px 10px;
-                font-size: 16px;
-            }
-            h1 {
-                font-size: 24px;
-            }
-            h2 {
-                font-size: 20px;
-            }
-            h3 {
-                font-size: 18px;
-            }
-            ul {
-                padding-left: 10px;
-            }
-        }
-    </style>
+    <title>Página - Módulo I - Primeiros Passos com HTML</title>
 </head>
 <body>
-    <a id="inicio"></a>
-    <h1>Aprendendo HTML na DIO</h1>
-    <hr>
-    <p>Bem-vindo à sua jornada de aprendizado com a Digital Innovation One!</p>
+    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
+    <hr />
 
-    <h2>Conteúdo</h2>
+    <h2 id="indice">Índice</h2id>
+    </h2>
     <ul>
-        <li><a href="#estrutura">A Estrutura do HTML</a></li>
-        <li><a href="#tags">As Principais Tags</a></li>
-        <li><a href="#textos">Trabalhando Com Textos</a></li>
-        <li><a href="#referencias">Referências</a></li>
+        <li><a href="#historia">História dos computadores</a></li>
+        <li><a href="#clients">O que são <i>Clients</i>?</a></li>
+        <li><a href="#servers">O que são <i>Servers</i>?</a></li>
+        <li><a href="#estrutura-html">Como é uma estrutura básica de um HTML?</a></li>
+        <li><a href="#listas">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+        <li><a href="#referencias">Links de referências</a></li>
     </ul>
 
-    <a id="estrutura"></a>
-    <h3>A Estrutura do HTML</h3>
+    <h2 id="historia">História dos computadores</h2>
     <p>
-        Toda página HTML começa com uma estrutura básica, que inclui a declaração do tipo de documento, 
-        a tag <code>&lt;html&gt;</code>, a seção <code>&lt;head&gt;</code> com informações da página, 
-        e a seção <code>&lt;body&gt;</code>, onde fica o conteúdo visível ao usuário.
+        A <strong>história dos computadores</strong> começa na metade do século XX, quando os primeiros dispositivos eletrônicos foram criados. Os computadores evoluíram rapidamente, tornando-se cada vez mais potentes e compactos. Para saber mais, visite o site da <a href="https://pt.wikipedia.org/wiki/Hist%C3%B3ria_do_computador" target="_blank" rel="noopener">Wikipedia sobre a história do computador</a>.
     </p>
-    <p><a href="#inicio">Voltar ao início</a></p>
+    <p><a href="#indice">Voltar ao índice</a></p>
 
-    <a id="tags"></a>
-    <h3>As Principais Tags</h3>
+    <h2 id="clients">O que são <i>Clients</i>?</h2>
     <p>
-        As tags HTML definem o conteúdo da página. Algumas das mais utilizadas atualmente são:
+        Os <strong><i>clients</i></strong> são dispositivos ou programas que solicitam serviços de servidores para acessar recursos, como páginas web. Um exemplo comum é o navegador. Você pode aprender mais no artigo da <a href="https://www.hostinger.com.br/tutoriais/o-que-e-servidor-client" target="_blank" rel="noopener">Hostinger sobre clients e servidores</a>.
     </p>
-    <ul>
-        <li><code>&lt;h1&gt; até &lt;h6&gt;</code>: usadas para definir títulos e subtítulos.</li>
-        <li><code>&lt;p&gt;</code>: define um parágrafo de texto.</li>
-        <li><code>&lt;a href=""&gt;</code>: cria links para outras páginas ou sites.</li>
-        <li><code>&lt;img src=""&gt;</code>: insere imagens na página.</li>
-        <li><code>&lt;ul&gt;, &lt;ol&gt; e &lt;li&gt;</code>: criam listas não ordenadas, ordenadas e seus itens.</li>
-        <li><code>&lt;input&gt;</code> e <code>&lt;form&gt;</code>: utilizados em formulários.</li>
-        <li><code>&lt;button&gt;</code>: cria botões interativos.</li>
-    </ul>
-    <p><a href="#inicio">Voltar ao início</a></p>
+    <p><a href="#indice">Voltar ao índice</a></p>
 
-    <a id="textos"></a>
-    <h3>Trabalhando Com Textos</h3>
+    <h2 id="servers">O que são <i>Servers</i>?</h2>
     <p>
-        O HTML permite organizar e destacar textos com diversas tags e atributos úteis, como:
+        <strong>Servers</strong> são computadores ou programas que fornecem recursos e serviços para os clients, respondendo às suas solicitações. Eles armazenam páginas, arquivos e dados. Veja mais detalhes no artigo da <a href="https://pt.wikipedia.org/wiki/Servidor_(computação)" target="_blank" rel="noopener">Wikipedia sobre servidores</a>.
     </p>
-    <ul>
-        <li><code>&lt;strong&gt;</code>: deixa o texto em <strong>negrito</strong>.</li>
-        <li><code>&lt;i&gt;</code>: coloca o texto em <i>itálico</i>.</li>
-        <li><code>&lt;mark&gt;</code>: <mark>destaca</mark> um trecho do texto.</li>
-        <li><code>&lt;u&gt;</code>: <u>sublinha</u> o conteúdo.</li>
-        <li><code>&lt;br&gt;</code>: insere uma quebra de linha.</li>
-        <li><code>&lt;blockquote&gt;</code>: usado para citações longas.</li>
-        <li><code>style</code> (atributo): usado em qualquer tag para aplicar estilos CSS diretamente, ex: <code>&lt;p style="font-size: 18px;"&gt;</code></li>
-    </ul>
-    <p><a href="#inicio">Voltar ao início</a></p>
+    <p><a href="#indice">Voltar ao índice</a></p>
 
-    <a id="referencias"></a>
-    <h3>Referências</h3>
-    <p>Confira algumas fontes úteis para aprender mais sobre HTML e desenvolvimento web:</p>
+    <h2 id="estrutura-html">Como é uma estrutura básica de um HTML?</h2>
+    <p>
+        Uma página HTML básica contém uma declaração do tipo do documento (<code>&lt;!DOCTYPE html&gt;</code>), seguida pela tag <code>&lt;html&gt;</code> que engloba todo o conteúdo. Dentro dela, há o <strong>head</strong>, que traz informações como título, e o <strong>body</strong>, onde fica o conteúdo visível. Para um guia mais completo, consulte o tutorial do <a href="https://www.w3schools.com/html/html_basic.asp" target="_blank" rel="noopener">W3Schools sobre estrutura HTML</a>.
+    </p>
+    <p><a href="#indice">Voltar ao índice</a></p>
+
+    <h2 id="listas">Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
+    <p>
+        Listas <strong>ordenadas</strong> (<code>&lt;ol&gt;</code>) exibem itens numerados, enquanto listas <strong>não ordenadas</strong> (<code>&lt;ul&gt;</code>) exibem marcadores simples. Ambas organizam conteúdos em formato de lista para facilitar a leitura. Saiba mais na documentação da <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/ul" target="_blank" rel="noopener">MDN Web Docs sobre listas</a>.
+    </p>
+    <p><a href="#indice">Voltar ao índice</a></p>
+
+    <h2 id="referencias">Links de referências</h2>
     <ul>
+        <li><a href="https://digitalinnovation.one/" target="_blank" rel="noopener">Digital Innovation One (DIO)</a></li>
+        <li><a href="https://www.w3.org/" target="_blank" rel="noopener">W3C - World Wide Web Consortium</a></li>
+        <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" rel="noopener">MDN Web Docs - HTML</a></li>
+        <li><a href="https://www.w3schools.com/html/" target="_blank" rel="noopener">W3Schools - Tutorial HTML</a></li>
         <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" rel="noopener">MDN Web Docs - HTML</a></li>
         <li><a href="https://www.w3schools.com/html/" target="_blank" rel="noopener">W3Schools - HTML Tutorial</a></li>
         <li><a href="https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web" target="_blank" rel="noopener">MDN - Começando na Web</a></li>
@@ -157,8 +68,9 @@
         <li><a href="https://www.infowester.com/introhtml5.php" target="_blank" rel="noopener">Introdução ao HTML5 - Infowester</a></li>
         <li><a href="https://www.w3schools.com/html/html_intro.asp" target="_blank" rel="noopener">Introdução ao HTML - W3Schools</a></li>
         <li><a href="https://www.primecursos.com.br/introducao-ao-html-5/" target="_blank" rel="noopener">Curso de Introdução ao HTML5 - Prime Cursos</a></li>
-        <li><a href="https://www.digitalinnovation.one/" target="_blank" rel="noopener">Digital Innovation One (DIO)</a></li>
+        <li><a href="https://www.youtube.com/watch?v=5ybJhtyMZV4" target="_blank" rel="noopener">Curso de HTML5 Aula 01 - Introdução ao HTML5</a></li>        
     </ul>
-    <p><a href="#inicio">Voltar ao início</a></p>
+
+    <p><a href="#indice">Voltar ao índice</a></p>
 </body>
 </html>
