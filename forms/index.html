@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Link para o Font Awesome -->     
+        <meta name="keywords" content="formulário, cadastro, usuário, registro"> <!-- Palavras-chave para SEO -->
+        <meta name="author" content="Eduardo Dias Pereira"> <!-- Nome do autor do documento -->
+        <link rel="icon" href="https://www.example.com/favicon.ico" type="image/x-icon"> <!-- Link para o ícone do site -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Link para o Font Awesome -->     
+        <title>Formulário de Cadastro</title> <!-- Título da página que aparece na aba do navegador -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a largura da viewport para dispositivos móveis -->
+        <meta name="description" content="Formulário de cadastro para novos usuários. Preencha os campos obrigatórios e envie para se registrar.">
+    </head>
+    <body>
+        <form name="cadastro" method="post" autocapitalize="on" autocomplete="on" onsubmit="alert('Formulário enviado com sucesso!');">
+            <h1>Formulário de Cadastro</h1>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required placeholder="Digite seu nome"><br>
+
+            <label for="idade">Idade:</label>
+            <input type="text" id="idade" name="idade" required placeholder="Digite sua idade"><br>
+
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required placeholder="Digite seu e-mail"><br>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required placeholder="Digite sua senha"><br>
+
+            <label for="confirmar-senha">Confirmar Senha:</label>
+            <input type="password" id="confirmar-senha" name="confirmar-senha" required placeholder="Confirme sua senha"><br>
+            <label for="color" color></label><input type="color"><br>
+            <label for="url" color></label><input type="url"><br>
+            <label for="date" color></label><input type="date"><br>
+            <label for="week" color></label><input type="week"><br>
+            <label for="month" color></label><input type="month"><br>
+            <label for="time" color></label><input type="time"><br>
+            <label for="datetime-local" color></label><input type="datetime-local"><br>
+            <label for="tel">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required placeholder="Digite seu telefone"><br> 
+            <label for="number">Número:</label>
+            <input type="number" id="numero" name="numero" required placeholder="Digite um número"><br>
+            <label for="range">Faixa:</label>
+            <input type="range" id="faixa" name="faixa" min="0" max="100" required><br> 
+            <label for="checkbox">Aceito os termos:</label>
+            <input type="checkbox" id="termos" name="termos" required><br>  
+            <label for="select">Selecione uma opção:</label>
+            <select id="opcao" name="opcao" required>
+                <option value="">Selecione</option>
+                <option value="opcao1">Opção 1</option>
+                <option value="opcao2">Opção 2</option>
+                <option value="opcao3">Opção 3</option>
+            </select><br>   
+            <label for="textarea">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50" required placeholder="Digite sua mensagem"></textarea><br>
+            <label for="file">Enviar arquivo:</label>   
+            <input type="file" id="arquivo" name="arquivo" accept=".jpg, .jpeg, .png, .pdf"><br>
+            <label for="search">Pesquisar:</label>
+            <input type="search" id="pesquisa" name="pesquisa" placeholder="Pesquisar..."><br>
+            <label for="submit">Enviar:</label>
+            <input type="submit" id="enviar" name="enviar" value="Enviar"><br>
+            <label for="reset">Limpar:</label>
+            <input type="reset" id="limpar" name="limpar" value="Limpar"><br>   
+            <label for="hidden">Campo oculto:</label>
+            <input type="hidden" id="oculto" name="oculto" value="valor_oculto"><br>
+            <label for="image">Imagem:</label>
+            <input type="image" src="https://www.example.com/image.jpg" alt="Enviar imagem" width="100" height="100"><br>
+            <label for="button">Botão:</label>
+            <button type="button" id="botao" name="botao" onclick="alert('Botão clicado!')">Clique aqui</button><br>    
+            <label for="submit">Enviar Formulário:</label>
+            <input type="submit" id="enviar-formulario" name="enviar-formulario" value="Enviar Formulário"><br>     
+            <label for="reset">Redefinir Formulário:</label>
+            <input type="reset" id="redefinir-formulario" name="redefinir-formulario" value="Redefinir Formulário"><br> 
+            <label for="captcha">Captcha:</label>
+            <input type="text" id="captcha" name="captcha" required placeholder="Digite o captcha"><br>     
+            <label for="range">Selecione um intervalo:</label>
+            <input type="range" id="intervalo" name="intervalo" min="0" max="100" step="1" required><br>        
+            <label for="color-picker">Escolha uma cor:</label>
+            <input type="color" id="cor" name="cor" required><br>   
+            <label for="file-upload">Carregar arquivo:</label>
+            <input type="file" id="carregar-arquivo" name="carregar-arquivo" accept=".jpg, .jpeg, .png, .pdf" required><br> 
+            <label for="date-picker">Selecione uma data:</label>
+            <input type="date" id="data" name="data" required><br>          
+            <label for="time-picker">Selecione um horário:</label>
+            <input type="time" id="horario" name="horario" required><br>    
+            <label for="datetime-local-picker">Selecione data e hora:</label>           
+            <input type="datetime-local" id="data-hora" name="data-hora" required><br>
+            <label for="week-picker">Selecione uma semana:</label>          
+            <input type="week" id="semana" name="semana" required><br>  
+            <label for="month-picker">Selecione um mês:</label>                         
+            <input type="month" id="mes" name="mes" required><br>
+            
+            
+
+
+            <button type="submit">Cadastrar</button>
+    </body>
+</html>

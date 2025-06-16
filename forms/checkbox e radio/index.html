@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <form action="" method="get">
+        <h1>Formulário de Checkbox e Radio</h1>
+        <p>Quais opcionais você deseja?</p>
+        <input type="checkbox" id="checkbox1" name="opcional[]" value="Queijo"> + Queijo <br>
+        <input type="checkbox" id="checkbox2" name="opcional[]" value="Calabresa"> + Calabresa <br>
+        <input type="checkbox" id="checkbox1" name="opcional[]" value="Cebola"> + Cebola <br>
+        <input type="checkbox" id="checkbox2" name="opcional[]" value="Azeitona"> + Azeitona <br>
+
+        <p>Borda Recheada?</p>        
+        <input type="radio" id="radio1" name="borda" value="SIM"> SIM<br>
+        <input type="radio" id="radio2" name="borda" value="NÃO"> NÃO<br>
+
+        <p>Qual o tamanho da pizza?</p>
+        <input type="radio" id="tamanho1" name="tamanho" value="Pequena"> Pequena<br>   
+        <input type="radio" id="tamanho2" name="tamanho" value="Média"> Média<br>
+        <input type="radio" id="tamanho3" name="tamanho" value="Grande"> Grande<br>
+        <input type="radio" id="tamanho4" name="tamanho" value="Gigante"> Gigante<br>
+
+        <p>Bebida?</p>
+        <input type="checkbox" id="bebida1" name="bebida[]" value="Refrigerante"> Refrigerante<br>
+        <input type="checkbox" id="bebida2" name="bebida[]" value="Suco"> Suco<br>  
+        <input type="checkbox" id="bebida3" name="bebida[]" value="Água"> Água<br>  
+        <input type="checkbox" id="bebida4" name="bebida[]" value="Cerveja"> Cerveja<br>
+        <input type="checkbox" id="bebida4" name="bebida[]" value="Nenhuma"> Nenhuma<br>
+        
+        <p>Forma de pagamento?</p>  
+        <input type="radio" id="pagamento1" name="pagamento" value="Dinheiro"> Dinheiro<br>
+        <input type="radio" id="pagamento2" name="pagamento" value="Cartão de Crédito"> Cartão de Crédito<br>       
+        <input type="radio" id="pagamento3" name="pagamento" value="Cartão de Débito"> Cartão de Débito<br>
+        <input type="radio" id="pagamento4" name="pagamento" value="Pix"> Pix<br>       
+        
+        <p>Observações:</p> 
+        <textarea name="observacoes" rows="4" cols="50" placeholder="Digite suas observações"></textarea><br>
+        <label for="file">Enviar arquivo:</label>
+
+
+
+        <button type="submit">Enviar</button>        
+
+    </form>
+    </body>
+</html>

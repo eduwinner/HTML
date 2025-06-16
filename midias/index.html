@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Trabalhando com imgens Caminho: midias/index.html -->
+        <img src="logo.jpg" alt="Logo em JPG" width="200" height="200"  ><br>
+        <a href="logo.jpg" download>Download Logo JPG</a><br>
+        <img src="logo.png" alt="Logo em PNG" width="200" height="200"><br>
+        <a href="logo.png" download>Download Logo PNG</a><br><br> 
+        <img src="logo.svg" alt="Logo em SVG" width="200" height="200"><br>
+        <a href="logo.svg" download>Download Logo SVG</a><br>
+        <svg width="200" height="200" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet">
+            <path d="M245.235 153.524c14.012-14.012 14.011-36.811 0-50.823-6.787-6.788-15.812-10.525-25.411-10.525-2.28 0-4.523.208-6.712.617 9.538-6.524 15.72-17.495 15.72-29.694 0-19.816-16.122-35.937-35.938-35.937-12.223 0-23.213 6.205-29.733 15.776 2.157-11.377-1.226-23.537-9.87-32.18C146.506 3.97 137.48.232 127.882.232c-9.6 0-18.624 3.738-25.412 10.526-8.643 8.643-12.026 20.803-9.87 32.18-6.519-9.57-17.509-15.776-29.733-15.776-19.815 0-35.936 16.12-35.936 35.937 0 12.2 6.18 23.17 15.718 29.694a36.487 36.487 0 0 0-6.711-.617c-9.6 0-18.624 3.738-25.411 10.526C3.738 109.489 0 118.514 0 128.112c0 9.6 3.738 18.624 10.526 25.412 6.787 6.787 15.812 10.526 25.41 10.526 2.28 0 4.523-.208 6.712-.618-9.538 6.525-15.718 17.496-15.718 29.695 0 19.815 16.12 35.936 35.936 35.936 12.224 0 23.215-6.206 29.734-15.776-2.157 11.378 1.226 23.538 9.87 32.18 6.787 6.788 15.812 10.526 25.41 10.526 9.6 0 18.625-3.738 25.412-10.526 8.643-8.643 12.026-20.803 9.869-32.18 6.52 9.57 17.51 15.776 29.733 15.776 19.816 0 35.937-16.12 35.937-35.936 0-12.2-6.18-23.17-15.719-29.695 2.189.41 4.433.618 6.712.618 9.599 0 18.624-3.739 25.411-10.526"/><path d="M234.391 113.538c-8.049-8.048-21.099-8.048-29.148 0h-42.184l29.829-29.828c11.383 0 20.61-9.228 20.61-20.611 0-11.383-9.227-20.612-20.61-20.612-11.384 0-20.611 9.229-20.611 20.612l-29.829 29.829V50.743c8.049-8.049 8.049-21.099 0-29.148-8.05-8.05-21.1-8.05-29.149 0s-8.049 21.1 0 29.148v42.185l-29.828-29.83c0-11.382-9.228-20.61-20.611-20.61-11.383 0-20.611 9.228-20.611 20.61 0 11.384 9.228 20.612 20.61 20.612l29.83 29.828H50.504c-8.05-8.049-21.1-8.048-29.15 0-8.048 8.05-8.048 21.1 0 29.15 8.05 8.048 21.1 8.048 29.15 0h42.183L62.86 172.515c-11.383 0-20.611 9.227-20.611 20.61 0 11.384 9.228 20.612 20.61 20.612 11.384 0 20.612-9.228 20.612-20.611l29.828-29.829v42.184c-8.049 8.049-8.049 21.1 0 29.149 8.05 8.049 21.1 8.049 29.15 0 8.048-8.05 8.048-21.1 0-29.15v-42.183l29.828 29.829c0 11.383 9.227 20.61 20.61 20.61 11.384 0 20.612-9.227 20.612-20.61 0-11.384-9.228-20.611-20.611-20.611l-29.83-29.829h42.185c8.05 8.05 21.1 8.05 29.148 0 8.05-8.049 8.05-21.1 0-29.149" fill="#FFB13B"/>
+        </svg><br>
+        <a href="logo.svg" download>Download Logo SVG</a><br>
+        
+        <!-- Trabalhando com áudio Caminho: midias/ -->
+        <audio src="mp3.mp3" alt="Este é um exemplo de um player MP3" controls></audio><br>
+
+        
+        <!-- Trabalhando com video Caminho: midias/ -->
+        <video alt="Este é um exemplo de um player MP4" controls></video>
+            <source src="mp4.mp4" type="video/mp4">
+            <source src="webm.webm" type="video/webm">
+            <source src="ogg.ogv" type="video/ogg">
+            Seu navegador não suporta o elemento de vídeo.
+        </video><br>
+        <!-- outro modo -->
+        <video src="mp4.mp4" alt="Este é um exemplo de um player MP4" controls>
+            <track src="mp4_pt-br.vtt" kind="captions" srclang="pt" label="Português">
+            <track src="mp4.vtt" kind="captions" srclang="en" label="English">   
+
+        </video><br>
+
+        <!-- Trabalhando com track (legendas) Caminho: midias/ -->
+        <video alt="Este é um exemplo de um player MP4" controls autoplay></video>
+            <source src="mp4.mp4" type="video/mp4">
+            <source src="webm.webm" type="video/webm">
+            <source src="ogg.ogv" type="video/ogg">
+            
+            Seu navegador não suporta o elemento de vídeo.
+            
+        </video><br>
+
+        <!-- Trabalhando com iframe Caminho: Google maps -->
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1914.8164510843988!2d-48.94731477039141!3d-16.290574460925995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ea4e4ad733f5b%3A0x6441cc92cdd531e8!2sWinner%20Tecnologia%20da%20Informa%C3%A7%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1750031336572!5m2!1spt-BR!2sbr" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </body>
+</html>

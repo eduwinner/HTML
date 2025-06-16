@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link href="css/style.css" rel="stylesheet">    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Link para o Font Awesome -->
+        <meta name="keywords" content="formulário, botão, select, exemplo"> <!-- Palavras-chave para SEO -->
+        <meta name="author" content="Eduardo Dias Pereira"> <!-- Nome do autor do documento -->
+        <link rel="icon" href="https://www.example.com/favicon.ico" type="image/x-icon"> <!-- Link para o ícone do site -->
+        <meta name="description" content="Exemplo de formulário com botões e um select. Preencha os campos e envie para testar."> <!-- Descrição do formulário -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a largura da viewport para dispositivos móveis -->
+    </head>
+    <body>        
+        <form action="" method="get">
+            <h1>Formulário de Botão</h1>
+            <p>Este é um exemplo de formulário com botões e um select.</p>
+            
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required placeholder="Digite seu nome"><br>
+            <br>
+            <br>
+            <br>
+            <label for="cargo">Cargo:</label>
+            <select id="cargo" name="cargo" required><!-- multiple permite selecionar mais de uma opção -->
+                <option value="">Selecione uma opção</option>
+                <option selected value="gerente">Gerente</option>
+                <option value="desenvolvedor">Desenvolvedor</option>
+                <option value="designer">Designer</option>
+                <option value="analista">Analista</option>  
+                <option value="outro">Outro</option>    
+            </select><br>
+            <br>
+            <br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+            <br>
+            <br>
+            <br>
+        </form>
+        <button type="button" onmouseover="alert('Você passou por aqui')" onclick="alert('Feito para clicar')">Teste de Botão</button>
+    </body>
+</html>
