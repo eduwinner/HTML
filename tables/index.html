@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Trabalhando com Tabelas</title>  
+        <style>
+            table { /*sombra*/
+                -webkit-box-shadow: 12px 14px 6px 5px rgba(0,0,0,0.24);
+                box-shadow: 12px 14px 6px 5px  rgba(0,0,0,0.24);
+                border: solid 1px color: gray;
+            }
+            table tbody tr:nth-child(even) td {/*cor nas linhas pares*/
+                background-color:cadetblue;
+            }
+            table tbody tr:hover td{/*cor ao passar o mouse*/
+                background-color: darkgray;
+                cursor: pointer;
+            }
+            table{
+                border: solid 1px black
+            }
+            table thead th {
+                background-color: black;
+                color: white;
+            }
+            table tfoot td{
+                background-color: lightgray;
+            }
+        </style>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>   
+        <table summary="Tabela referente a nome e idade dos alunos" width="400" cellspacing="0" cellpadding="5" align="center">
+            <caption>Tabela de Idades dos Alunos</caption>
+            <thead>
+                <tr>
+                    <th colspan="2">Minha Tabela</th><!--Mesclar celulas colspan mescla colunas e o rolspan mescla linhas-->
+                </tr>
+                <tr>
+                    <th title="Nome Completo">Nome</th>
+                    <th>Idade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="1">
+                <td>Eduardo</td>
+                <td>47</td>
+                </tr>
+                <tr id="2">
+                    <td>Antônio</td>
+                    <td>46</td>
+                </tr>
+                <tr id="3">
+                    <td>Pedro</td>
+                    <td>45</td>
+                </tr>
+                <tr id="4">
+                    <td>Paulo</td>
+                    <td>44</td>
+                </tr>
+                <tr id="5">
+                    <td>João</td>
+                    <td>43</td>
+                </tr>
+                <tr id="6">
+                    <td>Thiago</td>
+                    <td>42</td>
+                </tr>
+                <tr id="7">
+                    <td>André</td>
+                    <td>41</td>
+                </tr>
+                <tr id="8">
+                    <td>José</td>
+                    <td>40</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td>7</td>
+                </tr>
+            </tfoot>
+            
+        </table>        
+    </body>
+</html>
