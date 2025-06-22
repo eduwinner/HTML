@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Recursos Especiais</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            kbd{
+                border: solid 1px black;
+            }
+            pre{
+                background-color: #f1f1f1;
+            }
+            code{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Datalist é parecido com um select box-->
+        <input list="browsers" type="search" name="search"/>
+        <datalist id="browsers">
+            <option>Google Chrome</option>
+            <option>Mozilla Firefox</option>
+            <option>Microsoft Edge</option>
+            <option>Apple Safari</option>
+            <option>Opera</option>
+        </datalist>
+        <select name="browsers para escolha" id="1">
+            <option>Chrome</option>
+            <option>Mozilla Firefox</option>
+            <option>Edge</option>
+            <option>Safari</option>
+            <option>Opera</option>
+        </select>
+        <!--TAGs para comandos ou codigo fonte dentro da página -->
+        <p><b>Para copiar esta informação pressione <kbd>CTRL</kbd>+<kbd>C</kbd> </b></p><!--kbd comandos de teclado-->
+        <p>Para trocar o fundo de um elemento, utilize o comando <code>backgroud-color</code></p>
+        <p>Comando completo para altera a cor de fundo</p>
+        <pre>
+            <code>
+                code{
+                background-color: #f1f1f1;
+                color: red;
+                }
+            </code>
+        </pre>
+        <!--TAG Details - Exibe a frase "Saiba mais" sem a declaração da tag summary-->
+        <details>
+            <summary>Como trocar a cor de fundo de um elemento no HTML</summary>
+            <p>Para executar essa ação utiliza o comando <code>backgroud-color</code> no CSS</p>
+        </details>
+        <!--TAG Meter e Progress -->
+        <meter id="meter" min="0" max="100" value="80"></meter> <!-- Medidor Fixo -->
+        <progress id="progress" min="0" max="100" value="0"></progress> <!--sem value gera uma animação-->
+        <script >
+            var progress = 0;
+            progress = document.getElementById('progress');
+            const interval = setInterval(function(){
+                    progress.value += 10;
+                    if (progress.value>=100){                        
+                        clearInterval(interval);
+                    }
+                }, 500);
+            const alerta = setInterval(function(){
+                    clearInterval(alerta);
+                    alert('Carregamento executado com sucesso!!!');
+                }, 6000);                
+        </script>
+        <!--Canvas - Trabalhando com gráficos e animações-->
+        <canvas id="myCanvas" width="200" height="100" style="border: 1px solid black;">
+        </canvas>
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.moveTo(0,0);
+            ctx.lineTo(200,100);
+            ctx.stroke();
+        </script>
+
+    </body>
+</html>

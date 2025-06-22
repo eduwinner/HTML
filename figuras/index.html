@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Trabalhando com Imagens</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            figcaption{
+                font-style: italic;
+            }
+        </style>
+
+    </head>
+    <body>
+        <figure><!--Delimita o escopo de uma imagem-->
+            <img src="car-medium.jpg" alt="450" width="450">
+            <figcaption id="1">Fig.1 - Chevrolet Cobalt LT 2013 1.8 Flex Automático</figcaption>
+        </figure>
+        <picture>
+            <source srcset="car-medium.jpg" media="(min-width: 700px)"> <!--Muda a imagem de acordo com a resolução da tela-->
+            <img src="car-small.jpg" alt="450" width="450">
+            <figcaption id="1">Fig.1 - Chevrolet Cobalt LT 2013 1.8 Flex Automático</figcaption>
+        </picture>        
+        <script src="#" async defer></script>
+    </body>
+</html>

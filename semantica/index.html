@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--MUDANÇAS NAS ESTRUTURAS DO HTML NA VERSÃO 5-->
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tags HTML 5 - Estruturação</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            nav ul {
+                display: flex;
+                list-style: none;
+                margin: 5;
+            }
+            nav ul li a{
+                padding: 10px 15px;
+                color: blue;
+                text-decoration: none;
+                border-radius: 15px 15px 0px 0px;
+            }
+            nav ul li a:hover{
+                color: white;
+                background: blue;
+            }
+            blockquote {
+                background: #f5f5f5;
+                padding: 15px;
+                margin-left: 100px;
+                margin-right: 15px;
+                border-left: royalblue solid 5px;
+                width: 50%;
+            }
+            article time {
+                font-style: italic;
+            }
+            article q {
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body >
+        <header>
+            <nav><!--Menus de navegação-->
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Vendas</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="tel:5562998286169">Contato</a></li>
+
+                </ul>
+            </nav>
+        
+        </header>
+        <main> <!--Não pode ser filha de outras tags, exceto body. Só pode existir 1 por página-->
+            <h1>Desvendando Article, Blockquote e Q</h1>
+            <article>
+                <p>Artigo publicado em <time pubdate>21/06/2025 17:00</time></p>
+                <article>
+                    <blockquote cite="https://sitelinkado.com.br"> <!--Citação-->
+                        <p>A descoberta de novas TAGs apresenta um mundo de possibilidades, este é um exemplo de citação</p>
+                        <p>Citações maiores são formatadas de forma a se destacarem do corpo do texto</p>
+                        <p>Este é um exemplo</p>
+
+                    </blockquote>
+                    <p>Um exemplo de citação pequena<q cite="https://seulinkrelacionado.com.br">contido dentro de um parágrafo</q></p> <!--Citação pequena-->
+                </article>
+            </article>
+            <section> <!--Parecido com a DIV, estrutura as seções da página-->
+
+            </section>
+            <aside><!--Menos importância que a section geralmente conteúdos laterais-->
+
+            </aside>
+        </main>
+        
+        <footer>
+            <address>Rua 7, 275 - Bloco 2 Apto 501 - Condomínio Amazônia - Jardim das Américas 2ª Etapa - CEP 75.070-420 - Anápolis GO</address>
+        </footer>
+    </body>
+</html>
